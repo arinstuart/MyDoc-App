@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    tools:context=".Tips">
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="-36dp"
+        android:layout_marginRight="-36dp"
+        android:text="@string/welcome"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/appoint"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="32dp"
+        android:background="@color/cardview_light_background"
+        android:drawableLeft="@drawable/person"
+        android:text="appointments"
+        android:textSize="25dp"
+        android:onClick="appontments"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/appoint"
+        android:layout_marginTop="30dp"
+        android:background="@color/cardview_light_background"
+        android:text="Consultations"
+        android:textAlignment="gravity"
+        android:textSize="25dp"
+        android:onClick="consult"/>
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/location"
+        android:layout_marginTop="36dp"
+        android:background="@color/cardview_light_background"
+        android:text="Buy medicines"
+        android:textSize="25dp"
+        android:onClick="buy"/>
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/weather"
+        android:layout_marginTop="41dp"
+        android:background="@color/cardview_light_background"
+        android:text="Daily Tips"
+        android:textSize="25dp"
+        android:onClick="daily"/>
+
+    <TextView
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tips"
+        android:layout_marginTop="44dp"
+        android:background="@color/cardview_light_background"
+        android:text="Contact doctor"
+        android:textSize="25dp"
+        android:onClick="contact"/>
+
+</RelativeLayout>
